@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Nguyễn Đăng Khôi-BT-JS-7_8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-2" style="margin: bottom 500px;">
+        <h3 style="color:darkred ;">Đầu vào : Người dùng thêm 1 số vào mảng và tiến hành các tính toán</h3>
+        <input type="number" class="form-control w-25 mt-2" id="themSo">
+        <button id="btnNhapSo" class="btn btn-success mt-2"> Nhập thêm số</button>
+        <div class="alert alert-success mt-2" id="ketQuaDe"></div>
+        <hr>
+        <!-- bài 1 -->
+        <h3 style="color:darkred ;">BT1 : Tính tổng các số dương</h3>
+        <button id="btnTongSoDuong" class="btn btn-success mt-2">Tổng Số Dương</button>
+        <div class="alert alert-success mt-2" id="ketQua_b1"></div>
+        <hr>
+        <!-- bài 2 -->
+        <h3 style="color:darkred ;">BT2 : Đếm các số dương</h3>
+        <button id="btnDemSoDuong" class="btn btn-success mt-2">Tổng Số Dương</button>
+        <div class="alert alert-success mt-2" id="ketQua_b2"></div>
+        <hr>
+        <!-- bài 3 -->
+        <h3 style="color:darkred ;">BT3 :Tìm số nhỏ nhất</h3>
+        <button id="btnTimSo" class="btn btn-success mt-2">Tìm số nhỏ nhất</button>
+        <div class="alert alert-success mt-2" id="ketQua_b3"></div>
+        <hr>
+        <!-- bài 4 -->
+        <h3 style="color:darkred ;">BT4 :Tìm số dương nhỏ nhất</h3>
+        <button id="btnTimSoDNN" class="btn btn-success mt-2">Tìm số dương nhỏ nhất</button>
+        <div class="alert alert-success mt-2" id="ketQua_b4"></div>
+        <hr>
+        <!-- bài 5 -->
+        <h3 style="color:darkred ;">BT5 :Tìm số chẵn cuối cùng</h3>
+        <button id="btnTimSoChanCC" class="btn btn-success mt-2">Tìm số chẵn cuối cùng</button>
+        <div class="alert alert-success mt-2" id="ketQua_b5"></div>
+        <hr>
+        <!-- bài tập 6 -->
+        <h3 style="color:darkred ;">BT6: Đổi vị trí của 2 giá trị trong mảng</h3>
+        <input type="number" class="form-control w-25 mt-2" id="viTri1" placeholder="nhập vị trí 1">
+        <input type="number" class="form-control w-25 mt-2" id="viTri2" placeholder="nhập vị trí 2">
+        <button id="btnDoiCho" class="btn btn-success mt-2"> Đổi chỗ </button>
+        <div class="alert alert-success mt-2" id="ketQua_b6"></div>
+        <hr>
+        <!-- bài tập 7 -->
+        <h3 style="color:darkred ;">BT7: sắp xếp mảng theo thứ tự tăng dần</h3>
+        <button id="btnSapXep" class="btn btn-success mt-2">sắp xếp</button>
+        <div class="alert alert-success mt-2" id="ketQua_b7"></div>
+        <hr>
+        <!-- bài tập 8 -->
+        <h3 style="color:darkred ;">BT8: Tìm số nguyên tố đầu tiên</h3>
+        <button id="btnSoNguyenTo" class="btn btn-success mt-2">Tìm số nguyên tố</button>
+        <div class="alert alert-success mt-2" id="ketQua_b8"></div>
+        <hr>
+        <!-- bài tập 9 -->
+        <h3 style="color:darkred ;">BT9: đếm số nguyên => Người dùng thêm mảng mới và tính toán số nguyên </h3>
+        <input type="number" class="form-control w-25 mt-2" id="themSo1">
+        <button id="btnNhapSo1" class="btn btn-success mt-2"> Nhập thêm số</button>
+        <div class="alert alert-success mt-2" id="ketQua_b91"></div>
+        <button id="btnDemSoNguyen" class="btn btn-success mt-2">Đếm số nguyên</button>
+        <div class="alert alert-success mt-2" id="ketQua_b9"></div>
+        <hr>
+        <!-- bài tập 10 -->
+        <h3 style="color:darkred ;">BT10: so sánh số lượng số âm và số dương trong mảng</h3>
+        <button id="btnSoSanh" class="btn btn-success mt-2">So sánh</button>
+        <div class="alert alert-success mt-2" id="ketQua_b10"></div>
+        <hr>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
